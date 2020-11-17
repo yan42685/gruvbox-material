@@ -497,9 +497,6 @@ call gruvbox_material#highlight('deniteStatusLinePath', s:palette.fg0, s:palette
 highlight! link deniteSelectedLin Green
 " }}}
 " mhinz/vim-signify {{{
-highlight! link SignifySignAdd GreenSign
-highlight! link SignifySignChange BlueSign
-highlight! link SignifySignDelete RedSign
 highlight! link SignifySignChangeDelete PurpleSign
 " }}}
 " andymass/vim-matchup {{{
