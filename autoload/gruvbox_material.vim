@@ -73,8 +73,10 @@ function! gruvbox_material#get_palette(background, palette) "{{{
     endif "}}}
   elseif a:background ==# 'medium' "{{{
     if &background ==# 'dark'
+      " \ 'bg0':              ['#282828',   '235'],
+
       let palette1 = {
-            \ 'bg0':              ['#282828',   '235'],
+            \ 'bg0':              ['#262626',   '235'],
             \ 'bg1':              ['#32302f',   '236'],
             \ 'bg2':              ['#32302f',   '236'],
             \ 'bg3':              ['#45403d',   '237'],

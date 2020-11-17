@@ -612,24 +612,15 @@ highlight! link VistaPrivate Red
 " ft_begin: startify/quickmenu {{{
 " https://github.com/mhinz/vim-startify
 " https://github.com/skywind3000/quickmenu.vim
-highlight! link StartifyBracket Grey
-highlight! link StartifyFile Fg
-highlight! link StartifyNumber Red
-highlight! link StartifyPath Green
-highlight! link StartifySlash Green
-highlight! link StartifySection Blue
-highlight! link StartifyHeader Orange
-highlight! link StartifySpecial Grey
-highlight! link StartifyFooter Grey
-" ft_end }}}
-" ft_begin: quickmenu {{{
-" https://github.com/skywind3000/quickmenu.vim
-highlight! link QuickmenuOption Green
-highlight! link QuickmenuNumber Red
-highlight! link QuickmenuBracket Grey
-highlight! link QuickmenuHelp Green
-highlight! link QuickmenuSpecial Purple
-highlight! link QuickmenuHeader Orange
+" highlight! link StartifyBracket Grey
+" highlight! link StartifyFile Fg
+" highlight! link StartifyNumber Red
+" highlight! link StartifyPath Green
+" highlight! link StartifySlash Green
+" highlight! link StartifySection Blue
+" highlight! link StartifyHeader Orange
+" highlight! link StartifySpecial Grey
+" highlight! link StartifyFooter Grey
 " ft_end }}}
 " ft_begin: markdown {{{
 " builtin: {{{
