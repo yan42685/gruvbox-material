@@ -437,25 +437,6 @@ highlight! link CocExplorerTimeAccessed Aqua
 highlight! link CocExplorerTimeCreated Aqua
 highlight! link CocExplorerTimeModified Aqua
 " }}}
-" prabirshrestha/vim-lsp {{{
-highlight! link LspErrorVirtual Grey
-highlight! link LspWarningVirtual Grey
-highlight! link LspInformationVirtual Grey
-highlight! link LspHintVirtual Grey
-highlight! link LspErrorHighlight CocErrorHighlight
-highlight! link LspWarningHighlight CocWarningHighlight
-highlight! link LspInformationHighlight CocInfoHighlight
-highlight! link LspHintHighlight CocHintHighlight
-highlight! link lspReference CurrentWord
-" }}}
-" ycm-core/YouCompleteMe {{{
-highlight! link YcmErrorSign RedSign
-highlight! link YcmWarningSign YellowSign
-highlight! link YcmErrorLine ErrorLine
-highlight! link YcmWarningLine WarningLine
-highlight! link YcmErrorSection CocErrorHighlight
-highlight! link YcmWarningSection CocWarningHighlight
-" }}}
 " dense-analysis/ale {{{
 highlight! link ALEError CocErrorHighlight
 highlight! link ALEWarning CocWarningHighlight
@@ -471,28 +452,6 @@ highlight! link ALEVirtualTextWarning Grey
 highlight! link ALEVirtualTextInfo Grey
 highlight! link ALEVirtualTextStyleError Grey
 highlight! link ALEVirtualTextStyleWarning Grey
-" }}}
-" neomake/neomake {{{
-highlight! link NeomakeError ALEError
-highlight! link NeomakeErrorSign RedSign
-highlight! link NeomakeWarning ALEWarning
-highlight! link NeomakeWarningSign YellowSign
-highlight! link NeomakeInfo ALEInfo
-highlight! link NeomakeInfoSign BlueSign
-highlight! link NeomakeMessage Aqua
-highlight! link NeomakeMessageSign AquaSign
-highlight! link NeomakeVirtualtextError Grey
-highlight! link NeomakeVirtualtextWarning Grey
-highlight! link NeomakeVirtualtextInfo Grey
-highlight! link NeomakeVirtualtextMessag Grey
-" }}}
-" vim-syntastic/syntastic {{{
-highlight! link SyntasticError ALEError
-highlight! link SyntasticWarning ALEWarning
-highlight! link SyntasticErrorSign RedSign
-highlight! link SyntasticWarningSign YellowSign
-highlight! link SyntasticErrorLine ErrorLine
-highlight! link SyntasticWarningLine WarningLine
 " }}}
 " Yggdroot/LeaderF {{{
 if !exists('g:Lf_StlColorscheme')
@@ -537,22 +496,6 @@ call gruvbox_material#highlight('deniteStatusLineNumber', s:palette.purple, s:pa
 call gruvbox_material#highlight('deniteStatusLinePath', s:palette.fg0, s:palette.bg4)
 highlight! link deniteSelectedLin Green
 " }}}
-" kien/ctrlp.vim {{{
-call gruvbox_material#highlight('CtrlPMatch', s:palette.green, s:palette.none, 'bold')
-call gruvbox_material#highlight('CtrlPPrtBase', s:palette.bg4, s:palette.none)
-call gruvbox_material#highlight('CtrlPLinePre', s:palette.bg4, s:palette.none)
-call gruvbox_material#highlight('CtrlPMode1', s:palette.blue, s:palette.bg4, 'bold')
-call gruvbox_material#highlight('CtrlPMode2', s:palette.bg0, s:palette.blue, 'bold')
-call gruvbox_material#highlight('CtrlPStats', s:palette.grey2, s:palette.bg4, 'bold')
-highlight! link CtrlPNoEntries Red
-highlight! link CtrlPPrtCursor Blue
-" }}}
-" airblade/vim-gitgutter {{{
-highlight! link GitGutterAdd GreenSign
-highlight! link GitGutterChange BlueSign
-highlight! link GitGutterDelete RedSign
-highlight! link GitGutterChangeDelete PurpleSign
-" }}}
 " mhinz/vim-signify {{{
 highlight! link SignifySignAdd GreenSign
 highlight! link SignifySignChange BlueSign
@@ -568,42 +511,12 @@ call gruvbox_material#highlight('MatchWordCur', s:palette.none, s:palette.none, 
 highlight! link EasyMotionTarget Search
 highlight! link EasyMotionShade Grey
 " }}}
-" justinmk/vim-sneak {{{
-call gruvbox_material#highlight('SneakLabelMask', s:palette.bg_green, s:palette.bg_green)
-highlight! link Sneak Search
-highlight! link SneakLabel Search
-highlight! link SneakScope DiffText
-" }}}
-" terryma/vim-multiple-cursors {{{
-highlight! link multiple_cursors_cursor Cursor
-highlight! link multiple_cursors_visual Visual
-" }}}
-" mg979/vim-visual-multi {{{
-let g:VM_Mono_hl = 'Cursor'
-let g:VM_Extend_hl = 'Visual'
-let g:VM_Cursor_hl = 'Cursor'
-let g:VM_Insert_hl = 'Cursor'
-" }}}
-" dominikduda/vim_current_word {{{
-highlight! link CurrentWord CurrentWord
-highlight! link CurrentWordTwins CurrentWord
-" }}}
 " RRethy/vim-illuminate {{{
 highlight! link illuminatedWord CurrentWord
-" }}}
-" itchyny/vim-cursorword {{{
-highlight! link CursorWord0 CurrentWord
-highlight! link CursorWord1 CurrentWord
 " }}}
 " Yggdroot/indentLine {{{
 let g:indentLine_color_gui = s:palette.grey0[0]
 let g:indentLine_color_term = s:palette.grey0[1]
-" }}}
-" nathanaelkane/vim-indent-guides {{{
-if get(g:, 'indent_guides_auto_colors', 1) == 0
-  call gruvbox_material#highlight('IndentGuidesOdd', s:palette.bg0, s:palette.bg2)
-  call gruvbox_material#highlight('IndentGuidesEven', s:palette.bg0, s:palette.bg3)
-endif
 " }}}
 " luochen1990/rainbow {{{
 if !exists('g:rbpt_colorpairs')
@@ -631,52 +544,14 @@ let g:niji_light_colours = g:rbpt_colorpairs
 highlight! link SignatureMarkText BlueSign
 highlight! link SignatureMarkerText PurpleSign
 " }}}
-" ap/vim-buftabline {{{
-highlight! link BufTabLineCurrent TabLineSel
-highlight! link BufTabLineActive TabLine
-highlight! link BufTabLineHidden TabLineFill
-highlight! link BufTabLineFill TabLineFill
-" }}}
 " liuchengxu/vim-which-key {{{
 highlight! link WhichKey Red
 highlight! link WhichKeySeperator Green
 highlight! link WhichKeyGroup Yellow
 highlight! link WhichKeyDesc Blue
 " }}}
-" unblevable/quick-scope {{{
-call gruvbox_material#highlight('QuickScopePrimary', s:palette.aqua, s:palette.none, 'underline')
-call gruvbox_material#highlight('QuickScopeSecondary', s:palette.blue, s:palette.none, 'underline')
-" }}}
 " APZelos/blamer.nvim {{{
 highlight! link Blamer Grey
-" }}}
-" cohama/agit.vim {{{
-highlight! link agitTree Grey
-highlight! link agitDate Green
-highlight! link agitRemote Red
-highlight! link agitHead Orange
-highlight! link agitRef Aqua
-highlight! link agitTag Orange
-highlight! link agitStatFile Blue
-highlight! link agitStatRemoved Red
-highlight! link agitStatAdded Green
-highlight! link agitStatMessage Orange
-highlight! link agitDiffRemove Red
-highlight! link agitDiffAdd Green
-highlight! link agitDiffHeader Purple
-" }}}
-" netrw {{{
-" https://www.vim.org/scripts/script.php?script_id=1075
-highlight! link netrwDir Green
-highlight! link netrwClassify Green
-highlight! link netrwLink Grey
-highlight! link netrwSymLink Fg
-highlight! link netrwExe Yellow
-highlight! link netrwComment Grey
-highlight! link netrwList Aqua
-highlight! link netrwHelpCmd Blue
-highlight! link netrwCmdSep Grey
-highlight! link netrwVersion Orange
 " }}}
 " }}}
 " Extended File Types: {{{
