@@ -75,6 +75,9 @@ function! gruvbox_material#get_palette(background, palette) "{{{
     if &background ==# 'dark'
       " \ 'bg0':              ['#282828',   '235'],
 
+      " \ 'bg_diff_green':    ['#34381b',   '22'],
+      " \ 'bg_diff_red':      ['#402120',   '52'],
+      " \ 'bg_diff_blue':     ['#0e363e',   '17'],
       let palette1 = {
             \ 'bg0':              ['#262626',   '235'],
             \ 'bg1':              ['#32302f',   '236'],
@@ -85,11 +88,11 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_statusline1':   ['#32302f',   '236'],
             \ 'bg_statusline2':   ['#3a3735',   '236'],
             \ 'bg_statusline3':   ['#504945',   '240'],
-            \ 'bg_diff_green':    ['#34381b',   '22'],
             \ 'bg_visual_green':  ['#3b4439',   '22'],
-            \ 'bg_diff_red':      ['#402120',   '52'],
+            \ 'bg_diff_green':    ['#4e6053',   '22'],
+            \ 'bg_diff_red':      ['#614b51',   '52'],
+            \ 'bg_diff_blue':     ['#415c6d',   '17'],
             \ 'bg_visual_red':    ['#4c3432',   '52'],
-            \ 'bg_diff_blue':     ['#0e363e',   '17'],
             \ 'bg_visual_blue':   ['#374141',   '17'],
             \ 'bg_visual_yellow': ['#4f422e',   '94'],
             \ 'bg_current_word':  ['#3c3836',   '237']
