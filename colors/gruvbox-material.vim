@@ -593,16 +593,6 @@ highlight! link plugDeleted Grey
 highlight! link plugEdge Yellow
 highlight! link plugSha Green
 " ft_end }}}
-" ft_begin: tagbar {{{
-" https://github.com/majutsushi/tagbar
-highlight! link TagbarFoldIcon Green
-highlight! link TagbarSignature Green
-highlight! link TagbarKind Red
-highlight! link TagbarScope Orange
-highlight! link TagbarNestedKind Aqua
-highlight! link TagbarVisibilityPrivate Red
-highlight! link TagbarVisibilityPublic Blue
-" ft_end }}}
 " ft_begin: vista/vista_kind/vista_markdown {{{
 " https://github.com/liuchengxu/vista.vim
 highlight! link VistaBracket Grey
@@ -618,28 +608,6 @@ highlight! link VistaHeadNr Fg
 highlight! link VistaPublic Green
 highlight! link VistaProtected Yellow
 highlight! link VistaPrivate Red
-" ft_end }}}
-" ft_begin: nerdtree {{{
-" https://github.com/preservim/nerdtree
-highlight! link NERDTreeDir Green
-highlight! link NERDTreeDirSlash Aqua
-highlight! link NERDTreeOpenable Orange
-highlight! link NERDTreeClosable Orange
-highlight! link NERDTreeFile Fg
-highlight! link NERDTreeExecFile Yellow
-highlight! link NERDTreeUp Grey
-highlight! link NERDTreeCWD Aqua
-highlight! link NERDTreeHelp LightGrey
-highlight! link NERDTreeToggleOn Green
-highlight! link NERDTreeToggleOff Red
-highlight! link NERDTreeFlags Orange
-highlight! link NERDTreeLinkFile Grey
-highlight! link NERDTreeLinkTarget Green
-" ft_end }}}
-" ft_begin: dirvish {{{
-" https://github.com/justinmk/vim-dirvish
-highlight! link DirvishPathTail Aqua
-highlight! link DirvishArg Yellow
 " ft_end }}}
 " ft_begin: startify/quickmenu {{{
 " https://github.com/mhinz/vim-startify
@@ -662,19 +630,6 @@ highlight! link QuickmenuBracket Grey
 highlight! link QuickmenuHelp Green
 highlight! link QuickmenuSpecial Purple
 highlight! link QuickmenuHeader Orange
-" ft_end }}}
-" ft_begin: undotree {{{
-" https://github.com/mbbill/undotree
-call gruvbox_material#highlight('UndotreeSavedBig', s:palette.purple, s:palette.none, 'bold')
-highlight! link UndotreeNode Orange
-highlight! link UndotreeNodeCurrent Red
-highlight! link UndotreeSeq Green
-highlight! link UndotreeNext Blue
-highlight! link UndotreeTimeStamp Grey
-highlight! link UndotreeHead Yellow
-highlight! link UndotreeBranch Yellow
-highlight! link UndotreeCurrent Aqua
-highlight! link UndotreeSavedSmall Purple
 " ft_end }}}
 " ft_begin: markdown {{{
 " builtin: {{{
@@ -1203,24 +1158,6 @@ highlight! link dartLibrary PurpleItalic
 highlight! link dartMetadata Blue
 " }}}
 " ft_end }}}
-" ft_begin: coffee {{{
-" vim-coffee-script: https://github.com/kchmck/vim-coffee-script {{{
-highlight! link coffeeExtendedOp Orange
-highlight! link coffeeSpecialOp Fg
-highlight! link coffeeDotAccess Grey
-highlight! link coffeeCurly Fg
-highlight! link coffeeParen Fg
-highlight! link coffeeBracket Fg
-highlight! link coffeeParens Blue
-highlight! link coffeeBrackets Blue
-highlight! link coffeeCurlies Blue
-highlight! link coffeeOperator RedItalic
-highlight! link coffeeStatement Orange
-highlight! link coffeeSpecialIdent Purple
-highlight! link coffeeObject Purple
-highlight! link coffeeObjAssign Aqua
-" }}}
-" ft_end }}}
 " ft_begin: purescript {{{
 " purescript-vim: https://github.com/purescript-contrib/purescript-vim {{{
 highlight! link purescriptModuleKeyword PurpleItalic
@@ -1276,18 +1213,6 @@ highlight! link objcObjDef PurpleItalic
 highlight! link objcDirective RedItalic
 highlight! link objcPropertyAttribute Orange
 highlight! link objcHiddenArgument Aqua
-" }}}
-" ft_end }}}
-" ft_begin: cs {{{
-" builtin: https://github.com/nickspoons/vim-cs {{{
-highlight! link csUnspecifiedStatement PurpleItalic
-highlight! link csStorage RedItalic
-highlight! link csClass RedItalic
-highlight! link csNewType Aqua
-highlight! link csContextualStatement PurpleItalic
-highlight! link csInterpolationDelimiter Yellow
-highlight! link csInterpolation Yellow
-highlight! link csEndColon Fg
 " }}}
 " ft_end }}}
 " ft_begin: python {{{
@@ -1622,13 +1547,6 @@ highlight! link zshFunction GreenBold
 highlight! link zshDeref Blue
 highlight! link zshTypes Orange
 highlight! link zshVariableDef Blue
-" }}}
-" ft_end }}}
-" ft_begin: fish {{{
-" vim-fish: https://github.com/georgewitteman/vim-fish {{{
-highlight! link fishStatement Orange
-highlight! link fishLabel RedItalic
-highlight! link fishCommandSub Yellow
 " }}}
 " ft_end }}}
 " ft_begin: ps1 {{{
