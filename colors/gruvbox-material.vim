@@ -621,6 +621,10 @@ highlight! link VistaPrivate Red
 " highlight! link StartifyHeader Orange
 " highlight! link StartifySpecial Grey
 " highlight! link StartifyFooter Grey
+  highlight! StartifyHeader gui=bold guifg=#87bb7c
+  highlight! StartifyFile  gui=None guifg=#d8b98a
+  highlight! StartifyNumber gui=None guifg=#7daea3
+
 " ft_end }}}
 " ft_begin: markdown {{{
 " builtin: {{{
