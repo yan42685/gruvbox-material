@@ -1697,14 +1697,15 @@ highlight! link tomlBoolean Aqua
 highlight! link tomlTableArray tomlTable
 " ft_end }}}
 " ft_begin: diff/git {{{
-highlight! link diffAdded Green
-highlight! link diffRemoved Red
-highlight! link diffChanged Blue
-highlight! link diffOldFile Yellow
-highlight! link diffNewFile Orange
-highlight! link diffFile Aqua
-highlight! link diffLine Grey
-highlight! link diffIndexLine Purple
+" FIXME: 因为设置了延迟加载，所以这里的设置会覆盖我在init.vim的设置, 需要注释掉
+" highlight! link diffAdded Green
+" highlight! link diffRemoved Red
+" highlight! link diffChanged Blue
+" highlight! link diffOldFile Yellow
+" highlight! link diffNewFile Orange
+" highlight! link diffFile Aqua
+" highlight! link diffLine Grey
+" highlight! link diffIndexLine Purple
 " ft_end }}}
 " ft_begin: gitcommit {{{
 highlight! link gitcommitSummary Red
