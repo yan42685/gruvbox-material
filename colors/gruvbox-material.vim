@@ -1704,7 +1704,7 @@ highlight! link diffLine Grey
 highlight! link diffIndexLine Purple
 " ft_end }}}
 " ft_begin: gitcommit {{{
-highlight! link gitcommitSummary Red
+highlight!  gitcommitSummary guifg=#7daea3
 highlight! link gitcommitUntracked Grey
 highlight! link gitcommitDiscarded Grey
 highlight! link gitcommitSelected Grey
