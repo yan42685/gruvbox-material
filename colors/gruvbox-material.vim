@@ -496,9 +496,6 @@ call gruvbox_material#highlight('deniteStatusLineNumber', s:palette.purple, s:pa
 call gruvbox_material#highlight('deniteStatusLinePath', s:palette.fg0, s:palette.bg4)
 highlight! link deniteSelectedLin Green
 " }}}
-" mhinz/vim-signify {{{
-highlight! link SignifySignChangeDelete PurpleSign
-" }}}
 " andymass/vim-matchup {{{
 call gruvbox_material#highlight('MatchParenCur', s:palette.none, s:palette.none, 'bold')
 call gruvbox_material#highlight('MatchWord', s:palette.none, s:palette.none, 'underline')
@@ -1697,15 +1694,14 @@ highlight! link tomlBoolean Aqua
 highlight! link tomlTableArray tomlTable
 " ft_end }}}
 " ft_begin: diff/git {{{
-" FIXME: 因为设置了延迟加载，所以这里的设置会覆盖我在init.vim的设置, 需要注释掉
-" highlight! link diffAdded Green
-" highlight! link diffRemoved Red
-" highlight! link diffChanged Blue
-" highlight! link diffOldFile Yellow
-" highlight! link diffNewFile Orange
-" highlight! link diffFile Aqua
-" highlight! link diffLine Grey
-" highlight! link diffIndexLine Purple
+highlight! link diffAdded Green
+highlight! link diffRemoved Red
+highlight! link diffChanged Blue
+highlight! link diffOldFile Yellow
+highlight! link diffNewFile Orange
+highlight! link diffFile Aqua
+highlight! link diffLine Grey
+highlight! link diffIndexLine Purple
 " ft_end }}}
 " ft_begin: gitcommit {{{
 highlight! link gitcommitSummary Red
